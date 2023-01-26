@@ -21,6 +21,7 @@
     "no-mixed-spaces-and-tabs": "warn",
     "no-multiple-empty-lines": "warn",
     "no-console": "warn",
-    "no-var": "error"
+    "no-var": "error",
+    "react/react-in-jsx-scope": "off"
   }
 }

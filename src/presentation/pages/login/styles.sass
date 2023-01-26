@@ -1,0 +1,50 @@
+@use '../../assets/sass/mixins'
+
+.login
+    border-radius: 15px
+    background-color: #2C2C2C
+    display: flex
+    flex-direction: column
+    height: 400px
+    justify-content: center
+    margin: 1.5rem
+    padding: 2rem
+
+    @include mixins.tablet
+        height: 500px
+        width: 500px
+
+    &__background
+        height: 150px
+        left: 0
+        position: absolute
+        top: 0
+        width: 125px
+
+        @include mixins.tablet
+            height: 250px
+            margin-left: 2rem
+            width: 200px
+
+    &__logo
+        align-self: center
+        height: 60px
+        width: 150px
+
+    &__title
+        text-align: center
+
+    &__form
+        display: flex
+        flex-direction: column
+
+        &__label
+            margin-bottom: 0.5rem
+
+        &__input
+            margin-bottom: 1rem
+
+    &__link
+        align-self: flex-end
+        margin-bottom: 1rem
+        text-decoration: none
