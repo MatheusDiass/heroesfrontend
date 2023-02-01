@@ -1,0 +1,40 @@
+@use '../../assets/sass/variables'
+@use '../../assets/sass/mixins'
+
+.header
+    align-items: center
+    display: flex
+    margin: 2rem
+    justify-content: space-between
+
+    &__logo
+        height: 50px
+        width: 120px
+
+    &__button
+        align-items: center
+        background-color: variables.$gray
+        border: none
+        border-radius: 10px
+        display: flex
+        height: 40px
+        justify-content: center
+        margin: 0 2rem 0 0
+        position: absolute
+        right: 0
+        width: 40px
+        z-index: 15
+
+        @include mixins.tablet
+            display: none
+
+        &--openNavigation
+            background-color: variables.$black
+
+        &__icon
+            color: variables.$white
+            height: 25px
+            width: 25px
+
+            &--close
+                display: none
