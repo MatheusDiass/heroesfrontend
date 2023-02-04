@@ -8,13 +8,15 @@ export default function Home() {
   const [heroes] = useState(heroesList);
 
   return (
-    <div className="container">
-      <h1>Choose your hero!</h1>
+    <div className="home">
+      <h1 className="home__title">Choose your hero!</h1>
 
-      <Search />
+      <div className="home__search">
+        <Search />
+      </div>
 
-      <div className="heroes">
-        <ul className="heroes__list">
+      <div className="home__heroes">
+        <ul className="home__heroes__list">
           {heroes.map((hero) => (
             <li key={hero.id}>
               <Card
