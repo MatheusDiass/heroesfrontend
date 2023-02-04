@@ -1,3 +1,4 @@
+@use '../../assets/sass/variables'
 @use '../../assets/sass/mixins'
 
 .login
@@ -5,7 +6,7 @@
     background-color: #2C2C2C
     display: flex
     flex-direction: column
-    height: 400px
+    height: 480px
     justify-content: center
     margin: 1.5rem
     padding: 2rem
@@ -15,11 +16,11 @@
         width: 500px
 
     &__background
-        height: 150px
+        height: 110px
         left: 0
         position: absolute
         top: 0
-        width: 125px
+        width: 110px
 
         @include mixins.tablet
             height: 250px
@@ -32,6 +33,7 @@
         width: 150px
 
     &__title
+        font-size: 1.7rem
         text-align: center
 
     &__form
@@ -39,12 +41,60 @@
         flex-direction: column
 
         &__label
+            font-size: 1.2rem
             margin-bottom: 0.5rem
 
-        &__input
-            margin-bottom: 1rem
+        &__password
+            position: relative
 
-    &__link
-        align-self: flex-end
-        margin-bottom: 1rem
-        text-decoration: none
+            &__button
+                align-items: center
+                background-color: variables.$white
+                border: none
+                bottom: 0
+                display: flex
+                justify-content: center
+                position: absolute
+                right: 1rem
+                top: 0
+
+                @include mixins.desktop
+                    cursor: pointer
+
+                &__icon
+                    height: variables.$iconHeight
+                    width: variables.$iconWidth
+
+        &__input
+            border: none
+            border-radius: 10px
+            box-sizing: border-box
+            font-size: 1.2rem
+            margin-bottom: 1rem
+            padding: 1rem
+            width: 100%
+
+            &--icon
+                margin-bottom: 0
+                padding: 1rem 3.5rem 1rem 1rem
+
+            &:focus
+                outline: 2px solid variables.$black
+
+        &__link
+            align-self: flex-end
+            font-size: 1.2rem
+            margin: 1rem 0 1rem 0
+            text-decoration: none
+
+        &__button
+            border: none
+            border-radius: 10px
+            padding: 1rem
+
+            @include mixins.tablet
+                align-self: center
+                width: 50%
+
+            @include mixins.desktop
+                cursor: pointer
