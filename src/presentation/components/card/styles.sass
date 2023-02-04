@@ -1,0 +1,43 @@
+@use '../../assets/sass/variables'
+@use '../../assets/sass/mixins'
+
+.card
+    align-items: center
+    background-color: variables.$gray
+    border: 2px solid variables.$red
+    border-radius: 15px
+    margin-bottom: 2rem
+    display: flex
+    flex-direction: column
+    padding: 2rem
+
+    &__title
+        margin-bottom: 1rem
+
+    &__image
+        border-radius: 15px
+        margin-bottom: 1rem
+        height: 250px
+        width: 100%
+
+    &__actions
+        display: flex
+        justify-content: space-between
+        width: 100%
+
+        &__button
+            align-items: center
+            background-color: variables.$white
+            border: none
+            border-radius: 10px
+            display: flex
+            height: 40px
+            justify-content: center
+            width: 45%
+
+            @include mixins.desktop
+                cursor: pointer
+
+            &__icon
+                height: variables.$iconHeight
+                width: variables.$iconWidth
