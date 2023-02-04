@@ -1,0 +1,28 @@
+@use '../../assets/sass/variables'
+@use '../../assets/sass/mixins'
+
+.container
+    display: flex
+    flex-direction: column
+    margin: 0 2rem 0 2rem
+
+.heroes
+    margin-top: 2rem
+
+    &__list
+        list-style: none
+        padding: 0
+
+        @include mixins.tablet
+            display: grid
+            grid-template-columns: 1fr 1fr
+            column-gap: 1rem
+
+        @include mixins.desktop
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+
+        &__item
+            background-color: variables.$gray
+            border-radius: 15px
+            margin-bottom: 2rem
+            padding: 2rem
