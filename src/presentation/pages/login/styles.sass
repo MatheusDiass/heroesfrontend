@@ -44,39 +44,14 @@
             font-size: 1.2rem
             margin-bottom: 0.5rem
 
-        &__password
-            position: relative
-
-            &__button
-                align-items: center
-                background-color: variables.$white
-                border: none
-                bottom: 0
-                display: flex
-                justify-content: center
-                position: absolute
-                right: 1rem
-                top: 0
-
-                @include mixins.desktop
-                    cursor: pointer
-
-                &__icon
-                    height: variables.$iconHeight
-                    width: variables.$iconWidth
-
         &__input
             border: none
             border-radius: 10px
             box-sizing: border-box
             font-size: 1.2rem
             margin-bottom: 1rem
-            padding: 1rem
+            padding: 0.5rem
             width: 100%
-
-            &--icon
-                margin-bottom: 0
-                padding: 1rem 3.5rem 1rem 1rem
 
             &:focus
                 outline: 2px solid variables.$black
@@ -90,7 +65,7 @@
         &__button
             border: none
             border-radius: 10px
-            padding: 1rem
+            padding: 0.63rem
 
             @include mixins.tablet
                 align-self: center

@@ -1,5 +1,6 @@
 import './styles.sass';
 import hulkHand from '../../assets/images/hulk_hand.png';
+import PasswordField from '../../components/password-field';
 
 export default function Register() {
   return (
@@ -32,7 +33,7 @@ export default function Register() {
         <label className="register__form__label" htmlFor="">
           Password:
         </label>
-        <input className="register__form__input" type="text" />
+        <PasswordField />
 
         <button className="register__form__button">Register</button>
       </form>
