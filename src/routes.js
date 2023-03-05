@@ -5,6 +5,7 @@ import Home from './presentation/pages/home';
 import LoginLayout from './presentation/components/layouts/login';
 import Register from './presentation/pages/register';
 import RegisterLayout from './presentation/components/layouts/register';
+import ConfirmRegistration from './presentation/pages/confirm-registration';
 
 export default function AppRouter() {
   return (
@@ -16,6 +17,10 @@ export default function AppRouter() {
 
         <Route element={<RegisterLayout />}>
           <Route path="/register" element={<Register />} />
+          <Route
+            path="/confirm-registration"
+            element={<ConfirmRegistration />}
+          />
         </Route>
 
         <Route element={<DefaultLayout />}>
