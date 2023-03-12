@@ -1,6 +1,6 @@
 import './styles.sass';
 import hulkHand from '../../assets/images/hulk_hand.png';
-import PasswordField from '../../components/password-field';
+import Field from '../../components/field';
 
 export default function Register() {
   return (
@@ -13,27 +13,27 @@ export default function Register() {
         <label className="register__form__label" htmlFor="">
           Name:
         </label>
-        <input className="register__form__input" type="text" />
+        <Field />
 
         <label className="register__form__label" htmlFor="">
           Lastname:
         </label>
-        <input className="register__form__input" type="text" />
+        <Field />
 
         <label className="register__form__label" htmlFor="">
           Nickname:
         </label>
-        <input className="register__form__input" type="text" />
+        <Field />
 
         <label className="register__form__label" htmlFor="">
           Email:
         </label>
-        <input className="register__form__input" type="text" />
+        <Field />
 
         <label className="register__form__label" htmlFor="">
           Password:
         </label>
-        <PasswordField />
+        <Field isPasswordField={true} />
 
         <button className="register__form__button">Register</button>
       </form>

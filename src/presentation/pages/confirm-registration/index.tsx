@@ -1,5 +1,6 @@
 import './styles.sass';
 import captainAmerica from '../../assets/images/captain-america.png';
+import Field from '../../components/field';
 
 export default function ConfirmRegistration() {
   return (
@@ -16,7 +17,7 @@ export default function ConfirmRegistration() {
         <label className="confirm-registration__form__label" htmlFor="">
           Confirmation code:
         </label>
-        <input className="confirm-registration__form__input" type="text" />
+        <Field />
 
         <button className="confirm-registration__form__button">Confirm</button>
       </form>
