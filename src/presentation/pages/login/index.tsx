@@ -1,7 +1,7 @@
 import './styles.sass';
 import logo from '../../assets/images/marvel_logo.png';
 import imageBackground from '../../assets/images/spiderman.png';
-import PasswordField from '../../components/password-field';
+import Field from '../../components/field';
 
 export default function Login() {
   return (
@@ -18,12 +18,14 @@ export default function Login() {
         <label className="login__form__label" htmlFor="">
           Email or Username:
         </label>
-        <input className="login__form__input" type="text" />
+
+        <Field />
+
         <label className="login__form__label" htmlFor="">
           Password:
         </label>
 
-        <PasswordField />
+        <Field isPasswordField={true} />
 
         <a className="login__form__link" href="">
           I forgot my password
